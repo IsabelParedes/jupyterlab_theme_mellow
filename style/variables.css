@@ -87,10 +87,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-border-width: 1px;
-  --jp-border-color0: var(--md-grey-400);
-  --jp-border-color1: var(--md-grey-400);
-  --jp-border-color2: var(--md-grey-300);
-  --jp-border-color3: var(--md-grey-200);
+  --jp-border-color0: #C9B418;
+  --jp-border-color1: #B7A415;
+  --jp-border-color2: #A49313;
+  --jp-border-color3: #928311;
   --jp-border-radius: 2px;
 
   /* UI Fonts
@@ -117,18 +117,18 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   /* Defaults use Material Design specification */
-  --jp-ui-font-color0: rgba(0, 0, 0, 1);
-  --jp-ui-font-color1: rgba(0, 0, 0, 0.87);
-  --jp-ui-font-color2: rgba(0, 0, 0, 0.54);
-  --jp-ui-font-color3: rgba(0, 0, 0, 0.38);
+  --jp-ui-font-color0: #000;  /* tab title and main page */
+  --jp-ui-font-color1: #928311;  /* top and side menu */
+  --jp-ui-font-color2: #000;
+  --jp-ui-font-color3: #000;
 
   /*
    * Use these against the brand/accent/warn/error colors.
    * These will typically go from light to darker, in both a dark and light theme.
    */
 
-  --jp-ui-inverse-font-color0: rgba(255, 255, 255, 1);
-  --jp-ui-inverse-font-color1: rgba(255, 255, 255, 1);
+  --jp-ui-inverse-font-color0: #000;
+  --jp-ui-inverse-font-color1: #000;
   --jp-ui-inverse-font-color2: rgba(255, 255, 255, 0.7);
   --jp-ui-inverse-font-color3: rgba(255, 255, 255, 0.5);
 
@@ -158,11 +158,11 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-heading-font-weight: 500;
 
   /* Defaults use Material Design specification */
-  --jp-content-font-color0: rgba(0, 0, 0, 1);
-  --jp-content-font-color1: rgba(0, 0, 0, 0.87);
-  --jp-content-font-color2: rgba(0, 0, 0, 0.54);
-  --jp-content-font-color3: rgba(0, 0, 0, 0.38);
-  --jp-content-link-color: var(--md-blue-700);
+  --jp-content-font-color0: #000;
+  --jp-content-font-color1: #000;
+  --jp-content-font-color2: #000;
+  --jp-content-font-color3: #000;
+  --jp-content-link-color:  #A800E0;
   --jp-content-font-family: -apple-system, blinkmacsystemfont, 'Segoe UI',
     helvetica, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol';
@@ -193,11 +193,11 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from light to dark.
    */
 
-  --jp-layout-color0: white;
-  --jp-layout-color1: white;
-  --jp-layout-color2: var(--md-grey-200);
-  --jp-layout-color3: var(--md-grey-400);
-  --jp-layout-color4: var(--md-grey-600);
+  --jp-layout-color0: #EDFF7A;  /* main window page */
+  --jp-layout-color1: #EBE95D;  /* top and left menu */
+  --jp-layout-color2: #EADE4E;  /* edges */
+  --jp-layout-color3: #E8D33F;  /* background */
+  --jp-layout-color4: #E8D33F;
 
   /* Inverse Layout
    *
@@ -213,10 +213,10 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Brand/accent */
 
-  --jp-brand-color0: #ec0c4b;
-  --jp-brand-color1: #ed225d;
-  --jp-brand-color2: #ee376b;
-  --jp-brand-color3: #ee3b6e;
+  --jp-brand-color0: #D35CFF;
+  --jp-brand-color1: #FFB2E6; /* button, selected file, tab */
+  --jp-brand-color2: #EF476F;
+  --jp-brand-color3: #EF476F;
   --jp-accent-color0: var(--md-green-700);
   --jp-accent-color1: var(--md-green-500);
   --jp-accent-color2: var(--md-green-300);
@@ -247,11 +247,11 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-collapser-width: 8px;
   --jp-cell-collapser-min-height: 20px;
   --jp-cell-collapser-not-active-hover-opacity: 0.6;
-  --jp-cell-editor-background: var(--md-grey-100);
-  --jp-cell-editor-border-color: var(--md-grey-300);
-  --jp-cell-editor-box-shadow: inset 0 0 2px var(--md-blue-300);
-  --jp-cell-editor-active-background: var(--jp-layout-color0);
-  --jp-cell-editor-active-border-color: var(--jp-brand-color1);
+  --jp-cell-editor-background: var(--jp-layout-color0);
+  --jp-cell-editor-border-color: var(--jp-layout-color1);
+  --jp-cell-editor-box-shadow: inset 0 0 2px var(--jp-border-color0);
+  --jp-cell-editor-active-background: var(--jp-layout-color1);
+  --jp-cell-editor-active-border-color: var(--jp-layout-color2);
   --jp-cell-prompt-width: 64px;
   --jp-cell-prompt-font-family: 'Source Code Pro', monospace;
   --jp-cell-prompt-letter-spacing: 0;
@@ -259,9 +259,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-prompt-not-active-opacity: 0.5;
   --jp-cell-prompt-not-active-font-color: var(--md-grey-700);
 
-  /* A custom blend of MD grey and blue 600
-   * See https://meyerweb.com/eric/tools/color-blend/#546E7A:1E88E5:5:hex */
-  --jp-cell-inprompt-font-color: #307fc1;
+/* [ ] to the left of the cell */
+  --jp-cell-inprompt-font-color: var(--jp-border-color3);
 
   /* A custom blend of MD grey and orange 600
    * https://meyerweb.com/eric/tools/color-blend/#546E7A:F4511E:5:hex */
@@ -286,7 +285,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Rendermime styles */
 
-  --jp-rendermime-error-background: #fdd;
+  --jp-rendermime-error-background: #8d2222;
   --jp-rendermime-table-row-background: var(--md-grey-100);
   --jp-rendermime-table-row-hover-background: var(--md-light-blue-50);
 
@@ -302,28 +301,28 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-toolbar-border-color: var(--jp-border-color1);
   --jp-toolbar-micro-height: 8px;
-  --jp-toolbar-background: var(--jp-layout-color1);
+  --jp-toolbar-background: var(--jp-layout-color0);
   --jp-toolbar-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.24);
   --jp-toolbar-header-margin: 4px 4px 0 4px;
   --jp-toolbar-active-background: var(--md-grey-300);
 
-  /* Statusbar specific styles */
+  /* Statusbar (bottom) specific styles */
 
   --jp-statusbar-height: 24px;
 
   /* Input field styles */
 
-  --jp-input-box-shadow: inset 0 0 2px var(--md-blue-300);
+  --jp-input-box-shadow: inset 0 0 2px var(--jp-border-color0);
   --jp-input-active-background: var(--jp-layout-color1);
   --jp-input-hover-background: var(--jp-layout-color1);
   --jp-input-background: var(--md-grey-100);
   --jp-input-border-color: var(--jp-border-color1);
-  --jp-input-active-border-color: var(--jp-brand-color1);
+  --jp-input-active-border-color: var(--jp-brand-color0);
 
   /* General editor styles */
 
-  --jp-editor-selected-background: #d9d9d9;
-  --jp-editor-selected-focused-background: #d7d4f0;
+  --jp-editor-selected-background: #a19eff;
+  --jp-editor-selected-focused-background: #8884ff;
   --jp-editor-cursor-color: var(--jp-ui-font-color0);
 
   /* Code mirror specific styles */
@@ -331,7 +330,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-mirror-editor-keyword-color: #008000;
   --jp-mirror-editor-atom-color: #88f;
   --jp-mirror-editor-number-color: #080;
-  --jp-mirror-editor-def-color: #00f;
+  --jp-mirror-editor-def-color: #fff;
   --jp-mirror-editor-variable-color: var(--md-grey-900);
   --jp-mirror-editor-variable-2-color: #05a;
   --jp-mirror-editor-variable-3-color: #085;
