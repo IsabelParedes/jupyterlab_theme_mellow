@@ -7,6 +7,8 @@ node_modules/
 .ipynb_checkpoints
 *.tsbuildinfo
 jupyterlab_theme_mellow/labextension
+*.idea
+Untitled.ipynb
 
 # Created by https://www.gitignore.io/api/python
 # Edit at https://www.gitignore.io/?templates=python
